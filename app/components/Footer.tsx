@@ -1,7 +1,12 @@
+'use client'
+
+import { useMemo } from "react";
+
 const Footer = () => {
+
     return (
-        <div className="flex justify-center items-center mt-24 text-[#6e6f73] text-sm">
-            <div className="m-auto">
+        <div className="flex justify-center items-center mt-24 relative  text-[#6e6f73] text-sm">
+            <div className="">
                 <a href="/zendesk" className="text-white ml-24">고객센터(이용 및 결제 문의)</a>
                 <a href="mailto:cs@watcha.co.kr" className="text-[#eee] text-sm"> cs@watcha.co.kr</a>
                 <span> • 02-515-9985 (유료) </span>
@@ -20,29 +25,6 @@ const Footer = () => {
                     <li>개인정보 처리 방침 / </li>
                     <li>청소년 보호정책</li>
                     </ul>
-                
-             
-                    
-                 
-             
-                    
-                   
-             
-                    
-               
-             
-                    
-                  
-                    
-                   
-             
-                    
-                   
-                    
-           
-         
-                    
-            
             </div>
         </div>
       );

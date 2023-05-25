@@ -7,3 +7,8 @@ body,
 :root {
   height : 100%;
 }
+
+input[id="check1"] + label {
+	cursor: pointer;
+}
+
