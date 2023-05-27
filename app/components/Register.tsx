@@ -63,7 +63,7 @@ const Register = () => {
       <button className="bg-[#F82F62] rounded-full mt-4 py- w-full text-white h-12">
               게정 생성하기
             </button>
-    {/* <span className="">결제 정보요? 충분히 둘러보시고 입력해도 늦지 않아요</span> */}
+    <span className="flex text-white text-xs mt-3 justify-center">결제 정보요? 충분히 둘러보시고 입력해도 늦지 않아요</span>
     </div>
     
   );

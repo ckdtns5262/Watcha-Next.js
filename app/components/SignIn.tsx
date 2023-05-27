@@ -43,6 +43,7 @@ const SignIn = () => {
       </nav>
       <div className="flex justify-center mt-16">
         <div className=" py-16 self-center gap-24">
+        <form>
           <div className="flex gap-24">
             <h2 className="text-white text-xl font-semibold">
               {variant === "LOGIN" ? "로그인" : "회원가입"}
@@ -58,6 +59,7 @@ const SignIn = () => {
                 placeholder="이름 (2자 이상)"
                 type="text"
                 value={name}
+                name="name"
                 onChange={(e: any) => setName(e.target.value)}
               />
             ) : (
@@ -67,6 +69,7 @@ const SignIn = () => {
               id="email"
               placeholder="이메일 (example@gmail.com)"
               type="email"
+              name="email"
               onChange={(e: any) => {
                 setEmail(e.target.value);
               }}
@@ -74,6 +77,7 @@ const SignIn = () => {
             />
             <Input
               id="password"
+              name="password"
               placeholder={`${
                 variant === "LOGIN"
                   ? "비밀번호"
@@ -87,7 +91,7 @@ const SignIn = () => {
             />
 
             {variant === "LOGIN" ? (
-              <button className="bg-[#F82F62] rounded-full mt-4 py-2 text-white">
+              <button className="bg-[#F82F62] rounded-full mt-4 py-2 text-white w-full" type="submit">
                 로그인
               </button>
             ) : (
@@ -130,6 +134,7 @@ const SignIn = () => {
           ) : (
             <Register />
           )}
+            </form>
         </div>
       </div>
     </>
